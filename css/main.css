@@ -1151,6 +1151,22 @@
     background: #ffff;
 }
 
+@media (max-width: 1024px) {
+    .form__container{
+        width: 87%;
+    }
+}
+@media (max-width:884px) {
+    .form__container{
+        padding: 110px 0;
+    }
+    .form__context {
+        font-size: 18px;
+        line-height: 38px;
+        width: 90%;
+    }
+}
+
 /* Footer */
 footer {
     background: #4C4D4F;
