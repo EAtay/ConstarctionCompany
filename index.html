@@ -266,6 +266,7 @@
                 скидки
             </h1>
             <p class="sale__context">Обзор скидок и акций от нашей компании.
+                <br>
                 Успейте приобрести</p>
             <div class="sale__cards">
                 <div class="sale__card">
@@ -273,11 +274,11 @@
                         <div class="sale-only">
                             <p class="sale-price-text">Only</p>
                             <p class="sale-price">$10</p>
-                            <img src="./assets/img/sale-item.png" alt="item">
+                            <img src="./assets/img/sale-item.png" class="price-img" alt="item ">
                         </div>
-                        <h4 class="sale__context">
+                        <p class="sale__item-text">
                             50% Offer Going
-                        </h4>
+                        </p>
                         <p class="sale__text">
                             Первые 10 покупателей в ЖК I’M могут получить в подарок комплект кухонной техники Miele.
                         </p>
@@ -289,13 +290,13 @@
                 <div class="sale__card">
                     <div class="sale__card-content">
                         <div class="sale-only">
-                            <p class="sale-price-text">Only</p>
-                            <p class="sale-price">$10</p>
-                            <img src="./assets/img/sale-item.png" alt="item">
+                            <p class="sale-price-text white">Only</p>
+                            <p class="sale-price white">$10</p>
+                            <img src="./assets/img/sale-item-000.png" class="price-img" alt="item">
                         </div>
-                        <h4 class="sale__context">
+                        <p class="sale__item-text">
                             50% Offer Going
-                        </h4>
+                        </p>
                         <p class="sale__text">
                             Первые 10 покупателей в ЖК I’M могут получить в подарок комплект кухонной техники Miele.
                         </p>
@@ -307,7 +308,113 @@
             </div>
         </div>
     </section>
-    <h1>Main Page</h1>
+    <section id="offer">
+        <div class="offer__container">
+            <div class="offer__content">
+                <h1 class="offer__title">
+                    <div class="offer-top-line"></div>
+                    Что мы предлагаем
+                    <div class="offer-line"></div>
+                </h1>
+                <p class="offer__text">
+                    The atmosphere set the stage. It’s about more than just a dining room away from your home. food
+                    takes the spotlight as guests.
+                </p>
+            </div>
+            <div class="offer__cards">
+                <div class="offer__card">
+                    <img src="./assets/img/offer-item.png" alt="offer-card-logo">
+                    <p class="card__context">Удобный график</p>
+                </div>
+                <div class="offer__card">
+                    <img src="./assets/img/offer-item.png" alt="offer-card-logo">
+                    <p class="card__context">Подход к каждому</p>
+                </div>
+                <div class="offer__card">
+                    <img src="./assets/img/offer-bike.png" alt="offer-card-logo">
+                    <p class="card__context">Выезд к клиенту</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="news__container">
+            <div class="news__top">
+                <div class="news-top-line"></div>
+                <h1 class="news__title">Новости</h1>
+                <div class="news-line"></div>
+                <p class="news__text">
+                    Explore the latest stories about our dishes, offers,
+                    <br>
+                    events and future plans here.
+                </p>
+            </div>
+            <div class="news__cards">
+                <div class="news__card">
+                    <div class="card-img">
+                        <div class="img-background"></div>
+                        <img src="./assets/img/news-bg.png" alt="news">
+                        <button class="view-more-btn">
+                            View More
+                        </button>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__date">Март 28 2022</p>
+                        <h1 class="card__title"> Успейте приобрести!</h1>
+                        <p class="card__text">
+                            В жилом комплексе "УМУТ" остались последние квартиры! Успейте приобрести!
+                        </p>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="card-img">
+                        <div class="img-background"></div>
+                        <img src="./assets/img/news-bg.png" alt="news">
+                        <button class="view-more-btn">
+                            View More
+                        </button>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__date">Март 28 2022</p>
+                        <h1 class="card__title"> Успейте приобрести!</h1>
+                        <p class="card__text">
+                            В жилом комплексе "УМУТ" остались последние квартиры! Успейте приобрести!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__breadcrumbs">
+                <div class="active__breadcrumb"></div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="form__container">
+            <form action="submit" class="form">
+                <div class="form__line"></div>
+                <h1 class="form__title">Форма обратной связи</h1>
+                <div class="form__line"></div>
+                <p class="form__context">
+                    Оставьте заявку и наш менеджер свяжется с вами в удобное для вас время.
+                </p>
+                <div class="form__inputs">
+                    <input type="text" class="form__item" name="Fname" placeholder="ФИО">
+                    <input type="text" class="form__item" name="email" placeholder="Email">
+                    <input type="text" class="form__item" name="p-number" placeholder="Номер телефона">
+                    <input type="text" class="form__item" name="comment" placeholder="Комментарий">
+                </div>
+                <button class="formSend">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__bottom">
+            <p class="copyright">
+                © Copyright - AtlasSoft
+            </p>
+            <p class="confidantiality">Политика конфиденциальности</p>
+        </div>
+    </footer>
     <script type="module" src="./index.js"></script>
 
 </body>
