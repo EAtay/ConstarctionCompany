@@ -79,6 +79,7 @@ header {
     border-top: 1px solid #5C6168;
     padding: 26px 40px;
     align-items: center;
+    border-bottom: 1px solid #5C6168;
 }
 
 
@@ -368,3 +369,106 @@ header {
 }
 
 /* Main section */
+
+#main {
+    background: #4C4D4F;
+}
+
+.main__container {
+    padding: 38px 182px 146px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main__title {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #E1B168;
+}
+
+.addreses {
+    position: relative;
+    margin-top: 62px;
+    display: flex;
+    width: 80%;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.addres {
+    display: flex;
+    flex-direction: column;
+}
+
+.addres-item {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.offices {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.office-addres {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-left: 22px;
+}
+
+.work-time {
+    position: absolute;
+    top: -56;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.working-time {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.workimg-time-item {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.oclock {
+    font-size: 24px;
+}
+
+.map {
+    padding-bottom: 42px;
+}
+
+.map iframe {
+    height: 368px;
+    width: 100%;
+}
