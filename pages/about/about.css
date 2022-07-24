@@ -469,6 +469,7 @@ header {
     }
     .main__container{
         padding: 0 15px;
+        height: 100%;
     }
     .img__container img {
         bottom: -220;
