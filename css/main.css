@@ -343,6 +343,7 @@
 
 .project__img {
     margin-top: 45px;
+    width: 100%;
 }
 
 .section__content {
@@ -480,24 +481,28 @@
         padding: 0 15px;
     }
 
+    .projects__title {
+        width: 47%;
+    }
+
     .title__container {
         width: 80%;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-self: center;
+        align-items: center;
     }
 }
 
 @media (max-width: 540px) {
+
     .title__container {
         width: 90%;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-self: center;
     }
 
     .price__card {
@@ -1384,6 +1389,10 @@
 }
 
 @media (max-width: 680px) {
+    #form {
+        padding: 90px 0;
+    }
+
     .form__line {
         width: 33%;
     }
@@ -1403,6 +1412,11 @@
     .form__item::placeholder {
         font-size: 18px;
     }
+
+    .form__container {
+        padding: 50px 0;
+    }
+
 }
 
 @media (max-width:460px) {
@@ -1410,6 +1424,24 @@
         font-size: 13px;
         line-height: 26px;
         width: 100%;
+    }
+
+    .form__line {
+        width: 60%;
+    }
+
+    .formSend {
+        font-size: 20px;
+        width: 50%;
+        padding: 12px 0 10px;
+    }
+
+    .form__item::placeholder {
+        font-size: 16px;
+    }
+
+    .form__item {
+        padding: 12px;
     }
 }
 
@@ -1616,4 +1648,86 @@ footer {
     line-height: 30px;
     letter-spacing: 0.2px;
     color: #E1B168;
+}
+
+@media (max-width:960px) {
+    footer {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width:900px) {
+    .footer__container {
+        align-items: center;
+    }
+
+    .footer__form {
+        width: 100%;
+    }
+
+    .footer__logo-container {
+        width: 90%;
+    }
+
+    .footer__form__container {
+        width: 90%;
+    }
+
+    .footer-form__container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer__contact {
+        order: 1;
+    }
+
+    .footer__bottom {
+        margin-top: 20px;
+    }
+
+    .footer__form-item {
+        width: 60%;
+    }
+
+    .sendBtn {
+        width: 30%;
+        padding: 0;
+    }
+}
+@media (max-width:510px) {
+    .footer-form__container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__form-item{
+        width: 100%;
+    }
+    .sendBtn{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        align-items: center;
+        padding: 4px 0;
+    }
+    .footer__form__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__form{
+        margin-top: 22px;
+    }
+    .footer__contact{
+        width: 50%;
+    }
+    .footer__container{
+        padding-top: 80px;
+    }
+}
+@media (max-width: 400px) {
+    .copyright,
+    .confidantiality{
+        font-size: 12px;
+    }
 }
