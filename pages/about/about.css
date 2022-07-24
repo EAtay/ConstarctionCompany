@@ -9,7 +9,6 @@
 
 header {
     background: #4C4D4F;
-    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,8 +368,115 @@ header {
 }
 
 /* Main section */
+#main {
+    background: #4C4D4F;
+    padding: 64px 0 0;
+}
 
+.main__container {
+    justify-content: space-between;
+    padding: 0 40px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
 
+.img__container {
+    position: relative;
+    width: 46%;
+}
+
+.img__container img {
+    position: absolute;
+    width: 84%;
+    bottom: -60;
+}
+
+.content__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__title {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #E1B168;
+}
+
+.about__text {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+@media (max-width:1140px) {
+    .main__container {
+        height: 50%;
+    }
+}
+
+@media (max-width:860px) {
+    #main {
+        padding-bottom: 40px;
+    }
+
+    .main__container {
+        flex-direction: column-reverse;
+        height: 90%;
+        align-items: center;
+    }
+
+    .content__container {
+        width: 100%;
+    }
+
+    .img__container {
+        width: 50%;
+    }
+#main{
+    padding-bottom: 120px;
+}
+    .img__container img {
+        width: 100%;
+        bottom: -160;
+    }
+}
+
+@media (max-width:690px) {
+    .img__container {
+        width: 58%;
+    }
+}
+@media (max-width:610px) {
+    .img__container {
+        width: 65%;
+    }
+}
+@media (max-width:520px) {
+    #main {
+        padding-bottom: 140px;
+    }
+    .main__container{
+        padding: 0 15px;
+    }
+    .img__container img {
+        bottom: -180;
+    }
+    .img__container{
+        width: 70%;
+    }
+}
 
 /* Form Section */
 #form {
