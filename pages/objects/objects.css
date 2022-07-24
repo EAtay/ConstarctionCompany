@@ -369,8 +369,136 @@ header {
 }
 
 /* Main section */
+#main {
+    background: #4C4D4F;
+    padding: 44px 40px;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+}
 
 
+.title__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__main {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #E1B168;
+    margin-bottom: 48px;
+}
+
+.main-line {
+    height: 1px;
+    width: 11%;
+    background: #E1B168;
+}
+
+.context__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main__content{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main__cards {
+    margin-top: 44px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.card {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    background: #E1B168;
+}
+
+.card-active {
+    box-shadow: 10px 10px 10px 0px #FFFFFF40;
+}
+
+.card__img img{
+    width: 100%;
+}
+
+.card__content {
+    margin-top: 6px;
+    padding: 24px 0 8px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.card__location {
+    font-size: 24px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+@media (max-width:1000px) {
+    .card__content {
+        padding: 0px 0 8px;
+    }
+    .card-title{
+        font-size: 33px;
+    }
+    .card__location{
+        font-size: 22px;
+    }
+    .main__cards{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:790px) {
+    .card{
+        width: 31%;
+    }
+}
+@media (max-width:670px) {
+    .main__cards{
+        gap: 30px;
+    }
+    .card{
+        width: 100%;
+    }
+    .main__container{
+        align-items: center;
+    }
+    .main-line{
+        width: 100%g;
+    }
+}
 
 
 /* Form Section */
