@@ -465,7 +465,7 @@ header {
 }
 @media (max-width:520px) {
     #main {
-        padding-bottom: 140px;
+        padding-bottom: 180px;
     }
     .main__container{
         padding: 0 15px;
