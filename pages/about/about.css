@@ -14,11 +14,14 @@ header {
     justify-content: center;
     text-align: center;
     color: #fff;
-    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    max-width: 1420px;
 }
 
 .header__container {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -79,6 +82,7 @@ header {
     padding: 26px 40px;
     align-items: center;
     border-bottom: 1px solid #5C6168;
+
 }
 
 
@@ -133,6 +137,7 @@ header {
 .block {
     display: none;
 }
+
 
 @media (max-width:950px) {
     .container-top {
@@ -371,6 +376,9 @@ header {
 #main {
     background: #4C4D4F;
     padding: 64px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main__container {
@@ -378,6 +386,10 @@ header {
     padding: 0 40px;
     display: flex;
     height: 100%;
+    min-height: 700px;
+    max-width: 1420px;
+    width: 100%;
+    max-width: 1420px;
     flex-wrap: wrap;
 }
 
@@ -444,9 +456,11 @@ header {
     .img__container {
         width: 50%;
     }
-#main{
-    padding-bottom: 120px;
-}
+
+    #main {
+        padding-bottom: 120px;
+    }
+
     .img__container img {
         width: 100%;
         bottom: -160;
@@ -458,23 +472,28 @@ header {
         width: 58%;
     }
 }
+
 @media (max-width:610px) {
     .img__container {
         width: 65%;
     }
 }
+
 @media (max-width:520px) {
     #main {
         padding-bottom: 180px;
     }
-    .main__container{
+
+    .main__container {
         padding: 0 15px;
         height: 100%;
     }
+
     .img__container img {
         bottom: -220;
     }
-    .img__container{
+
+    .img__container {
         width: 70%;
     }
 }
@@ -495,6 +514,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 63%;
+    max-width: 1520px;
     padding: 140px 0;
 }
 
@@ -655,10 +675,15 @@ header {
 /* Footer */
 footer {
     background: #4C4D4F;
-    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__container {
+    width: 90%;
+    max-width: 1420px;
     padding-top: 166px;
     display: flex;
     flex-direction: column;
@@ -834,6 +859,8 @@ footer {
 
 .footer__bottom {
     display: flex;
+    max-width: 1420px;
+    width: 90%;
     border-top: 1px solid #575B62;
     flex-wrap: wrap;
     padding: 24px 0;

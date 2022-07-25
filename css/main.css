@@ -2,13 +2,17 @@
 
 #main {
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.main__section {
-    display: flex;
-    padding: 70px 40px 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.content__container {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 200px;
+    padding: 70px 20px 0;
 }
 
 .title__side {
@@ -33,7 +37,7 @@
 }
 
 .main-btn {
-    width: 66%;
+    width: 60%;
     text-align: center;
     align-items: center;
     background: #E1B168;
@@ -47,22 +51,29 @@
 }
 
 .img-side {
-    margin-right: 66px;
-    height: 740px;
-    width: 42%;
     position: relative;
-    background: url(/assets/img/bg.png) no-repeat;
-    background-size: 100% 100%;
+    margin-right: 36px;
+    height: 740px;
+    display: flex;
 }
 
 .circle-vector {
     position: absolute;
-    top: 388;
-    right: 40;
+    top: -50;
+    right: -80;
+}
+
+
+@media (max-width:1450px) {
+    .main__bg {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:950px) {
-    .fmain__section {
+    .content__container {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -73,14 +84,14 @@
     }
 
     .img-side {
-        width: 70%;
         margin: 0;
     }
 
     .circle-vector {
+        width: 60%;
         position: absolute;
-        top: 820px;
-        right: 100px;
+        top: -40;
+        right: 0;
     }
 }
 
@@ -95,36 +106,40 @@
 }
 
 @media (max-width: 580px) {
-    .main__section {
+    .content__container {
         padding: 70px 15px;
+        gap: 20px;
     }
 
     .img-side {
         width: 100%;
-        height: 480px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
     }
 
+
     .circle-vector {
-        top: 820px;
-        width: 60%;
+        top: -20;
+        right: -20;
     }
 }
 
-@media (max-width:400px) {
-    .circle-vector {
-        top: 830px;
 
-    }
-}
 
 /* About Us section */
 
 #about-us {
     background: #FFF8F5;
-    padding: 90px 40px;
+    padding: 90px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__container {
+    width: 90%;
+    max-width: 1420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,11 +303,16 @@
 
 #projects {
     margin-top: 176px;
-    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects__container {
+    width: 100%;
+    max-width: 1520px;
     display: flex;
+    padding: 70px 20px 0;
     gap: 15px;
 }
 
@@ -334,7 +354,7 @@
 .content__context {
     margin-top: 12px;
     font-weight: 400;
-    width: 94%;
+    width: 96%;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.2px;
@@ -343,12 +363,12 @@
 
 .project__img {
     margin-top: 45px;
-    width: 100%;
+    width: 78%;
 }
 
 .section__content {
     display: flex;
-    width: 61%;
+    width: 62%;
     flex-direction: column;
     position: relative;
 }
@@ -562,14 +582,19 @@
 
 #Why-we {
     margin-top: 132px;
-    padding: 140px 0 120px 40px;
+    padding: 140px 0 120px 0px;
     background: #4C4D4F;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 }
 
 .why-container {
     display: flex;
+    max-width: 1420px;
+    width: 90%;
     flex-direction: column;
 }
 
@@ -610,6 +635,7 @@
     display: flex;
     overflow: hidden;
     flex-wrap: nowrap;
+    max-width: 1620px;
     margin-top: 78px;
     gap: 30px;
     width: calc(67% + 51vw);
@@ -853,19 +879,25 @@
         min-width: 150px;
     }
 }
+
 @media (max-width:380px) {
     .carousel-card-context {
         font-size: 11px;
         line-height: 14px;
     }
 }
+
 /* Sale section */
 #sales {
     margin: 60px 0 162px;
-    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sale__container {
+    width: 90%;
+    max-width: 1420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1025,10 +1057,16 @@
 
 #offer {
     background: #4C4D4F;
-    padding: 140px 40px;
+    padding: 140px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .offer__container {
+    width: 90%;
+    max-width: 1420px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1165,10 +1203,15 @@
 
 /* News Section */
 #news {
-    padding: 0 40px 141px;
+    padding-bottom: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .news__container {
+    width: 90%;
+    max-width: 1580px;
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -1388,6 +1431,7 @@
     align-items: center;
     justify-content: center;
     width: 63%;
+    max-width: 1520px;
     padding: 140px 0;
 }
 
@@ -1548,10 +1592,15 @@
 /* Footer */
 footer {
     background: #4C4D4F;
-    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__container {
+    width: 90%;
+    max-width: 1420px;
     padding-top: 166px;
     display: flex;
     flex-direction: column;
@@ -1727,6 +1776,8 @@ footer {
 
 .footer__bottom {
     display: flex;
+    width: 90%;
+    max-width: 1420px;
     border-top: 1px solid #575B62;
     flex-wrap: wrap;
     padding: 24px 0;

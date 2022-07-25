@@ -7,18 +7,21 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 header {
-    background: #4C4D4F;
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    flex-wrap: wrap;
+    background: #4C4D4F;
+}
+
+.content {
+    width: 100%;
+    max-width: 1420px;
 }
 
 .header__container {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -134,6 +137,7 @@ header {
 .block {
     display: none;
 }
+
 
 @media (max-width:950px) {
     .container-top {
@@ -368,13 +372,19 @@ header {
     }
 }
 
+
 /* Main section */
 #main {
     background: #4C4D4F;
     padding: 44px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__container {
+    width: 100%;
+    max-width: 1420px;
     display: flex;
     flex-direction: column;
 }
@@ -415,7 +425,8 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.main__content{
+
+.main__content {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -443,7 +454,7 @@ header {
     box-shadow: 10px 10px 10px 0px #FFFFFF40;
 }
 
-.card__img img{
+.card__img img {
     width: 100%;
 }
 
@@ -466,36 +477,45 @@ header {
     letter-spacing: 0.2px;
     color: #FFFFFF;
 }
+
 @media (max-width:1000px) {
     .card__content {
         padding: 0px 0 8px;
     }
-    .card-title{
+
+    .card-title {
         font-size: 33px;
     }
-    .card__location{
+
+    .card__location {
         font-size: 22px;
     }
-    .main__cards{
+
+    .main__cards {
         margin-bottom: 100px;
     }
 }
+
 @media (max-width:790px) {
-    .card{
+    .card {
         width: 31%;
     }
 }
+
 @media (max-width:670px) {
-    .main__cards{
+    .main__cards {
         gap: 30px;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
-    .main__container{
+
+    .main__container {
         align-items: center;
     }
-    .main-line{
+
+    .main-line {
         width: 100%;
     }
 }
@@ -517,6 +537,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 63%;
+    max-width: 1520px;
     padding: 140px 0;
 }
 
@@ -677,10 +698,15 @@ header {
 /* Footer */
 footer {
     background: #4C4D4F;
-    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__container {
+    width: 90%;
+    max-width: 1420px;
     padding-top: 166px;
     display: flex;
     flex-direction: column;
@@ -856,6 +882,8 @@ footer {
 
 .footer__bottom {
     display: flex;
+    width: 90%;
+    max-width: 1420px;
     border-top: 1px solid #575B62;
     flex-wrap: wrap;
     padding: 24px 0;

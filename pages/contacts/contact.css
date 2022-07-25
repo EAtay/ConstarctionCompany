@@ -14,11 +14,14 @@ header {
     justify-content: center;
     text-align: center;
     color: #fff;
-    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    max-width: 1420px;
 }
 
 .header__container {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -79,6 +82,7 @@ header {
     padding: 26px 40px;
     align-items: center;
     border-bottom: 1px solid #5C6168;
+
 }
 
 
@@ -99,11 +103,10 @@ header {
 
 .nav-item:nth-child(4) a {
     color: #E1B168;
+    margin-right: 0;
+
 }
 
-.nav-item:nth-child(4) {
-    margin-right: 0;
-}
 
 .header__social-links {
     align-items: center;
@@ -133,6 +136,7 @@ header {
 .block {
     display: none;
 }
+
 
 @media (max-width:950px) {
     .container-top {
@@ -367,14 +371,21 @@ header {
     }
 }
 
+
 /* Main section */
 
 #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: #4C4D4F;
 }
 
 .main__container {
-    padding: 38px 182px 146px;
+    width: 100%;
+    max-width: 1420px;
+    padding: 48px 182px 146px;
     display: flex;
     flex-direction: column;
 }
@@ -465,7 +476,8 @@ header {
 }
 
 .map {
-    padding-bottom: 42px;
+ width: 100%;
+       padding-bottom: 42px;
 }
 
 .map iframe {
@@ -508,12 +520,12 @@ header {
     }
 
     .workimg-time-item,
-    .addres-item,.office-addres {
+    .addres-item,
+    .office-addres {
         font-size: 22px;
         line-height: 46px;
     }
 }
-
 
 
 
@@ -533,6 +545,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 63%;
+    max-width: 1520px;
     padding: 140px 0;
 }
 
@@ -693,10 +706,15 @@ header {
 /* Footer */
 footer {
     background: #4C4D4F;
-    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__container {
+    width: 90%;
+    max-width: 1420px;
     padding-top: 166px;
     display: flex;
     flex-direction: column;
@@ -872,6 +890,8 @@ footer {
 
 .footer__bottom {
     display: flex;
+    width: 90%;
+    max-width: 1420px;
     border-top: 1px solid #575B62;
     flex-wrap: wrap;
     padding: 24px 0;
@@ -979,8 +999,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+
     .copyright,
     .confidantiality {
         font-size: 12px;
     }
-}
+}git 
