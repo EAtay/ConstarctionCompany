@@ -1,12 +1,16 @@
 header {
     background: #4C4D4F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: #fff;
 }
-.content{
+
+#header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
     width: 100%;
     max-width: 1420px;
 }
@@ -71,6 +75,8 @@ header {
     border-top: 1px solid #5C6168;
     padding: 26px 40px;
     align-items: center;
+    border-bottom: 1px solid #5C6168;
+
 }
 
 
@@ -88,7 +94,11 @@ header {
     color: #fff;
     text-decoration: none;
 }
+.nav-item a:hover{
+    color: #E1B168;
+    text-decoration: none;
 
+}
 .nav-item:nth-child(1) a {
     color: #E1B168;
 }

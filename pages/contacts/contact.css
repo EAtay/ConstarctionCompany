@@ -100,7 +100,11 @@ header {
     color: #fff;
     text-decoration: none;
 }
+.nav-item a:hover{
+    color: #E1B168;
+    text-decoration: none;
 
+}
 .nav-item:nth-child(4) a {
     color: #E1B168;
     margin-right: 0;
