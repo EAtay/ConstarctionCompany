@@ -3,12 +3,6 @@ header {
     color: #fff;
 }
 
-#header {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 
 .content {
     width: 100%;
@@ -301,7 +295,7 @@ header {
 
 @media (max-width:775px) {
     .container-top {
-        padding: 0 15px;
+        padding: 20px 15px;
     }
 
     .block {

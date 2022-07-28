@@ -298,9 +298,10 @@
         justify-content: flex-start;
     }
 }
+
 @media (max-width:420px) {
 
-    .about-item img{
+    .about-item img {
         width: 36%;
     }
 }
@@ -496,7 +497,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        align-self: center;
+        align-items: center;
     }
 
     .projects__title {
@@ -607,7 +608,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .why-container {
@@ -651,7 +651,13 @@
 }
 
 
-/* Carousel */
+/* Carousel in Why section*/
+
+.carousel-container {
+    max-width: 1620px;
+    margin-top: 78px;
+    width: calc(67% + 51vw);
+}
 
 .carousel {
     display: flex;
@@ -663,6 +669,34 @@
     width: calc(67% + 51vw);
 }
 
+
+#carousel-indicator {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+    border-radius: 10px;
+}
+
+#carousel-indicator .active {
+    height: 20px;
+    width: 20px;
+    background: #E1B168;
+    box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+    border-radius: 10px;
+}
+
+#carousel-inner {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    max-width: 1620px;
+    gap: 30px;
+    width: calc(67% + 51vw);
+}
+
 .carousel-item {
     width: 42%;
     background: #343942;
@@ -670,6 +704,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+/* carousel1's cards */
+
+#slaider-indicators {
+    width: 40%;
+    bottom: 0;
+}
+#slaider-indicators .active{
+    background: #fff;
+}
+#slider__item {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+    border-radius: 10px;
+    border: none;
+}
+
+
+.carousel-nd-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+    background: #343942;
+    padding: 62px 0px 98px;
     justify-content: center;
 }
 
@@ -696,22 +760,6 @@
     gap: 10px;
     justify-content: center;
     align-self: center;
-}
-
-.index-active-item {
-    height: 20px;
-    width: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
-    border-radius: 10px;
-}
-
-.index-item {
-    height: 20px;
-    width: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
-    border-radius: 10px;
 }
 
 @media (max-width:1040px) {
@@ -867,10 +915,6 @@
     margin-top: 0;
 }
 
-.slider__container img {
-    width: 100%;
-}
-
 #myCarousel {
     display: flex;
     justify-content: center;
@@ -896,18 +940,6 @@
 }
 
 
-#index__item {
-    height: 20px;
-    width: 20px;
-    background: #808285;
-    border-radius: 10px;
-    border: none;
-}
-
-#carousel-indicators .active {
-    background: #E1B168;
-}
-
 #carousel-inner {
     height: 100%;
 }
@@ -932,6 +964,7 @@
         width: 14px;
     }
 }
+
 @media (max-width:400px) {
     #carousel-indicators {
         width: 24%;
