@@ -576,6 +576,11 @@
         width: 20%;
     }
 
+    .project__img {
+        margin-top: 35px;
+        width: 98%;
+    }
+
     .card-price-title {
         font-size: 26px;
     }
@@ -713,9 +718,11 @@
     width: 40%;
     bottom: 0;
 }
-#slaider-indicators .active{
+
+#slaider-indicators .active {
     background: #fff;
 }
+
 #slider__item {
     margin: 0;
     height: 20px;
@@ -1684,10 +1691,12 @@
 /* Footer */
 footer {
     background: #4C4D4F;
+}
+#footer{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .footer__container {
