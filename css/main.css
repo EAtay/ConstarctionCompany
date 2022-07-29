@@ -127,6 +127,8 @@
 
 
 
+
+
 /* About Us section */
 
 #about-us {
@@ -179,6 +181,22 @@
     line-height: 30px;
     letter-spacing: 0.2px;
     color: #555555;
+}
+
+@media (max-width: 385px) {
+    .item-title {
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .item-context {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #555555;
+    }
 }
 
 .about-bottom__container {
@@ -831,6 +849,10 @@
         line-height: 19px;
     }
 
+    carousel-nd-item {
+        height: 182px;
+    }
+
     .why-content {
         width: 90%;
     }
@@ -881,8 +903,6 @@
         line-height: 27px;
         color: #FFFFFF;
     }
-    .carousel-nd-item{}
-
 
     .carousel-item {
         min-width: 150px;
@@ -893,6 +913,17 @@
     .carousel-card-context {
         font-size: 11px;
         line-height: 14px;
+    }
+
+    #slaider-indicators {
+        position: absolute;
+        bottom: -70;
+        width: 40%;
+    }
+
+    #slider__item {
+        width: 14px;
+        height: 14px;
     }
 }
 
@@ -1965,7 +1996,7 @@ footer {
     .sendBtn {
         display: flex;
         justify-content: center;
-        width: 40%;
+        width: 60%;
         align-items: center;
         padding: 4px 0;
     }
@@ -1981,7 +2012,10 @@ footer {
     }
 
     .footer__contact {
-        width: 50%;
+        width: 100%;
+    }
+    .work__time-item {
+        width: 100%;
     }
 
     .footer__container {

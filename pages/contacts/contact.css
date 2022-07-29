@@ -100,11 +100,7 @@ header {
     color: #fff;
     text-decoration: none;
 }
-.nav-item a:hover{
-    color: #E1B168;
-    text-decoration: none;
 
-}
 .nav-item:nth-child(4) a {
     color: #E1B168;
     margin-right: 0;
@@ -306,7 +302,7 @@ header {
 
 @media (max-width:775px) {
     .container-top {
-        padding: 20px 15px;
+        padding: 0 15px;
     }
 
     .block {
