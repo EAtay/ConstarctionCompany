@@ -617,6 +617,7 @@
 
 .why-container {
     display: flex;
+    height: 618px;
     max-width: 1420px;
     width: 90%;
     flex-direction: column;
@@ -714,9 +715,13 @@
 
 /* carousel1's cards */
 
+.why-container{
+}
 #slaider-indicators {
-    width: 40%;
+    position: absolute;
+    background: red;
     bottom: 0;
+    width: 40%;
 }
 
 #slaider-indicators .active {
@@ -911,6 +916,11 @@
 }
 
 /* Slider section */
+#slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .slider__container {
     display: flex;
@@ -949,6 +959,18 @@
 
 #carousel-inner {
     height: 100%;
+}
+#index__item{
+    height: 20px;
+    border: none;
+    background: #808285;
+g
+    width: 20px;
+}
+
+#carousel-indicators .active{
+    background: #E1B168;
+
 }
 
 @media (max-width:920px) {

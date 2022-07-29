@@ -2,7 +2,11 @@ header {
     background: #4C4D4F;
     color: #fff;
 }
-
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .content {
     width: 100%;
