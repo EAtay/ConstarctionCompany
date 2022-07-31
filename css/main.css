@@ -1017,7 +1017,8 @@
         height: 10px;
         width: 10px;
     }
-    #carousel-inner img{
+
+    #carousel-inner img {
         height: 200px;
     }
 }
@@ -1763,7 +1764,8 @@ footer {
 .footer-logo {
     width: 40%;
 }
-.footer-logo img{
+
+.footer-logo img {
     width: 100%;
 }
 
@@ -1942,7 +1944,7 @@ footer {
 
 @media (max-width:960px) {
     footer {
-            padding: 0px 15px;
+        padding: 0px 15px;
     }
 }
 
@@ -2018,14 +2020,15 @@ footer {
         width: 100%;
     }
 
-    .work__time-item {
+    .footer__work-time {
         width: 100%;
     }
 
     .footer__container {
         padding-top: 80px;
     }
-    .work__time-item{
+
+    .work__time-item {
         text-align: left;
     }
 }
