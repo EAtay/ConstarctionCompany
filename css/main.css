@@ -1583,7 +1583,7 @@
 
 .form__title {
     font-weight: 400;
-    margin-top: 4px;
+    margin: 6px 0;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 3px;
@@ -1759,9 +1759,10 @@ footer {
 }
 
 .footer-logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
+    width: 40%;
+}
+.footer-logo img{
+    width: 100%;
 }
 
 .social-networks__footer {
