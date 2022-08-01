@@ -10,15 +10,23 @@
     font-family: 'Advent Pro', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
+._lock{
+    overflow-y: hidden;
+}
 
 
 header {
-    display: flex;
-    justify-content: center;
     text-align: center;
     color: #fff;
     background: #4C4D4F;
 }
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .content {
     width: 100%;
@@ -35,7 +43,6 @@ header {
 .container-top {
     padding: 30px 40px;
 }
-
 .header__tel {
     width: 21%;
     display: flex;
@@ -45,7 +52,6 @@ header {
     border: 2px solid #E1B168;
 
 }
-
 .header__tel p {
     margin: 0;
 }
@@ -67,9 +73,7 @@ header {
 .header__logo a img {
     width: 42%;
 }
-._lock{
-    overflow-y: hidden;
-}
+
 
 
 
@@ -125,7 +129,7 @@ header {
 
 }
 
-.nav-item:nth-child(3) a {
+.nav-item:nth-child(4) a {
     color: #E1B168;
 }
 
@@ -410,7 +414,9 @@ header {
     padding: 44px 40px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 .main__container {
@@ -456,97 +462,16 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
-.main__content {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.slider__container{
+    margin: 40px 0;
 }
 
-.main__cards {
-    margin-top: 44px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 200px;
+.main__content{
+    text-align: left;
 }
-
-.card {
-    width: 28%;
-    display: flex;
-    flex-direction: column;
-    background: #E1B168;
-}
-
-.card-active {
-    box-shadow: 10px 10px 10px 0px #FFFFFF40;
-}
-
-.card__img img {
-    width: 100%;
-}
-
-.card__content {
-    margin-top: 6px;
-    padding: 24px 0 8px;
-}
-
-.card-title {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: #FFFFFF;
-}
-
-.card__location {
+.main__text{
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    color: #FFFFFF;
-}
-
-@media (max-width:1000px) {
-    .card__content {
-        padding: 0px 0 8px;
-    }
-
-    .card-title {
-        font-size: 33px;
-    }
-
-    .card__location {
-        font-size: 22px;
-    }
-
-    .main__cards {
-        margin-bottom: 100px;
-    }
-}
-
-@media (max-width:790px) {
-    .card {
-        width: 31%;
-    }
-}
-
-@media (max-width:670px) {
-    .main__cards {
-        gap: 30px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .main__container {
-        align-items: center;
-    }
-
-    .main-line {
-        width: 100%;
-    }
+    line-height: 40px;
+    color: #fff;
 }

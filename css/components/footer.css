@@ -12,7 +12,7 @@ footer {
 .footer__container {
     width: 90%;
     max-width: 1420px;
-    padding-top: 166px;
+    padding-top: 106px;
     display: flex;
     flex-direction: column;
 }
@@ -34,11 +34,14 @@ footer {
 }
 
 .footer-logo {
+    display: flex;
+    justify-content: center;
     width: 40%;
+    align-items: center;
 }
 
 .footer-logo img {
-    width: 100%;
+    width: 44%;
 }
 
 .social-networks__footer {
@@ -258,6 +261,9 @@ footer {
         width: 30%;
         padding: 0;
     }
+    .footer-logo img {
+        width: 84%;
+    }
 }
 
 @media (max-width:510px) {
@@ -303,10 +309,12 @@ footer {
     .work__time-item {
         text-align: left;
     }
+    .footer-logo img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
-
     .copyright,
     .confidantiality {
         font-size: 12px;

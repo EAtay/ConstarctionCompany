@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../pages/objects/objects.css">
+    <link rel="stylesheet" href="../../pages/objects/object-2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="content">
             <div class="header__container container-top">
                 <div class="header__tel dekstop">
@@ -41,10 +44,10 @@
                             <a href="../../pages/about/about.html">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Объекты</a>
+                            <a href="../../pages/objects/objects.html">Объекты</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../object-2/object-2.html">Объекты-2</a>
+                            <a href="#">Объекты-2</a>
                         </li>
                         <li class="nav-item">
                             <a href="../../pages/contacts/contact.html">Контакты</a>
@@ -85,33 +88,30 @@
                 <p class="text">СТРОЯЩИЕСЯ</p>
                 <div class="main-line"></div>
             </div>
-            <div class="main__content">
-                <div class="main__cards">
-                    <div class="card card-active">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
+            <div class="slider__container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol id="carousel-indicators" class="carousel-indicators">
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="1"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="2"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+    
+                    <!-- Wrapper for slides -->
+                    <div id="carousel-inner" class="carousel-inner">
+                        <div class="item active">
+                            <img src="../../assets/img/slider-bg.png" alt="1st-item" style="width:100%;">
                         </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
+    
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="2st-item" style="width:100%;">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="3st-item" style="width:100%;">
                         </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
-                        </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="4st-item" style="width:100%;">
                         </div>
                     </div>
                 </div>
@@ -121,36 +121,36 @@
                 <p class="text">Завершенные</p>
                 <div class="main-line"></div>
             </div>
-            <div class="main__content">
-                <div class="main__cards">
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
+            <div class="slider__container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol id="carousel-indicators" class="carousel-indicators">
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="1"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="2"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+    
+                    <!-- Wrapper for slides -->
+                    <div id="carousel-inner" class="carousel-inner">
+                        <div class="item active">
+                            <img src="../../assets/img/slider-bg.png" alt="1st-item" style="width:100%;">
                         </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
+    
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="2st-item" style="width:100%;">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="3st-item" style="width:100%;">
                         </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="../../assets/img/card-objects.png" alt="card-img">
-                        </div>
-                        <div class="card__content">
-                            <h1 class="card-title">Discovery</h1>
-                            <p class="card__location">Бишкек</p>
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="4st-item" style="width:100%;">
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="main__content">
+                <p class="main__text">Cтроительная компания нк cтрой была образована в 2020 году. миссия нашей компании строить качественное жильё и создавать удобные условия для их приобретения. хоть мы и довольно молодая компания, но уже успели завершить не мало объектов и успешно сдать их в эксплуатацию. на данный момент мы заканчиваем строительство в городе каракол жилой дом «каракол сити»<p>
             </div>
         </div>
     </section>

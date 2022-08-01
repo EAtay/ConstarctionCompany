@@ -33,9 +33,8 @@ header {
 }
 
 .container-top {
-    padding: 108px 40px 106px;
+    padding: 30px 40px;
 }
-
 .header__tel {
     width: 21%;
     display: flex;
@@ -46,6 +45,9 @@ header {
 
 }
 
+.header__tel p {
+    margin: 0;
+}
 .phone-number {
     font-weight: 400;
     font-size: 22px;
@@ -60,12 +62,13 @@ header {
     align-items: center;
 }
 
-.header__logo a {
-    width: 62%;
-}
 
 .header__logo a img {
-    width: 100%;
+    width: 42%;
+}
+
+._lock{
+    overflow-y: hidden;
 }
 
 
@@ -117,7 +120,7 @@ header {
     text-decoration: none;
 }
 
-.nav-item:nth-child(4) a {
+.nav-item:nth-child(5) a {
     color: #E1B168;
     margin-right: 0;
 
@@ -387,7 +390,14 @@ header {
     }
 }
 
-
+@media (max-width:350px) {
+    .block {
+        width: 40%;
+    }
+    .header__social-links {
+        width: 22%;
+    }
+}
 /* Main section */
 
 #main {

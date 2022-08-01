@@ -1,6 +1,8 @@
+
 header {
-    background: #4C4D4F;
+    text-align: center;
     color: #fff;
+    background: #4C4D4F;
 }
 
 #header {
@@ -8,6 +10,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 
 .content {
     width: 100%;
@@ -22,7 +25,7 @@ header {
 }
 
 .container-top {
-    padding: 100px 40px 98px;
+    padding: 30px 40px;
 }
 
 .header__tel {
@@ -32,13 +35,10 @@ header {
     align-items: center;
     justify-content: center;
     border: 2px solid #E1B168;
-
 }
-
 .header__tel p {
     margin: 0;
 }
-
 .phone-number {
     font-weight: 400;
     font-size: 22px;
@@ -53,13 +53,11 @@ header {
     align-items: center;
 }
 
-.header__logo a {
-    width: 62%;
-}
 
 .header__logo a img {
-    width: 100%;
+    width: 42%;
 }
+
 
 
 .header__contact-us {
@@ -107,8 +105,7 @@ header {
     color: #fff;
     text-decoration: none;
 }
-
-.nav-item a:hover {
+.nav-item a:hover{
     color: #E1B168;
     text-decoration: none;
 
@@ -118,7 +115,7 @@ header {
     color: #E1B168;
 }
 
-.nav-item:nth-child(4) {
+.nav-item:nth-child(5) {
     margin-right: 0;
 }
 
@@ -149,6 +146,9 @@ header {
 
 .block {
     display: none;
+}
+._lock{
+    overflow-y: hidden;
 }
 
 
@@ -390,5 +390,14 @@ header {
 @media (max-width:448px) {
     .header__social-links {
         width: 20%;
+    }
+}
+
+@media (max-width:350px) {
+    .block {
+        width: 40%;
+    }
+    .header__social-links {
+        width: 22%;
     }
 }
