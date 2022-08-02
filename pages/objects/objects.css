@@ -49,6 +49,7 @@ header {
 .header__tel p {
     margin: 0;
 }
+
 .phone-number {
     font-weight: 400;
     font-size: 22px;
@@ -67,7 +68,8 @@ header {
 .header__logo a img {
     width: 42%;
 }
-._lock{
+
+._lock {
     overflow-y: hidden;
 }
 
@@ -119,7 +121,8 @@ header {
     color: #fff;
     text-decoration: none;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     color: #E1B168;
     text-decoration: none;
 
@@ -395,10 +398,12 @@ header {
         width: 20%;
     }
 }
+
 @media (max-width:350px) {
     .block {
         width: 40%;
     }
+
     .header__social-links {
         width: 22%;
     }
@@ -474,22 +479,26 @@ header {
     margin-bottom: 200px;
 }
 
-.card {    
+.card {
     width: 28%;
     display: flex;
     flex-direction: column;
     background: #E1B168;
 }
-.card a{
+
+.card a {
     text-decoration: none;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 10px 10px 10px 0px #FFFFFF40;
     transition: .6s;
 }
-.card:active{
+
+.card:active {
     box-shadow: 10px 10px 10px 0px #FFFFFF40;
 }
+
 .card__img img {
     width: 100%;
 }
