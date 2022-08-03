@@ -9,20 +9,8 @@ export default function openModal() {
     userPhone = document.getElementById("phoneNumber"),
     comment = document.getElementById("comment"),
     errorMsg = document.querySelectorAll(".input-status");
-  const errorChecked = document.querySelector(".checked__error");
-  const doneBtn = document.querySelector(".hidden__btn-done");
   const closeModal = document.querySelector(".close__content");
 
-
-  const openByBtn = () => {
-    const form = document.getElementById("form-modal");
-    Array.from(form.elements.checkbox__value).forEach(
-      (x) => (x.checked = false)
-    );
-
-    modalOpen.style.display = "block";
-    document.body.classList.add("body__scroll-off");
-  };
   function validateEmail(email) {
     let re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -61,7 +49,6 @@ export default function openModal() {
     validation(comment, 3, "required field");
 
     if (username.value && email.value && userPhone.value && comment.value) {
-
       loadContent.classList.add("hidden__modal__content");
       setTimeout(() => {
         sendBtn.setAttribute("disabled", "");
