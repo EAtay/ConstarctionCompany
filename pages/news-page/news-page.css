@@ -181,6 +181,9 @@ header {
 }
 
 @media(max-width: 865px) {
+    .header__logo a img {
+        width: 62%;
+    }
     .header__nav {
         position: fixed;
         top: 0;
@@ -362,7 +365,7 @@ header {
 
 @media (max-width:550px) {
     header {
-        height: 300px;
+        height: 254px;
     }
 
     .block {
@@ -385,7 +388,9 @@ header {
 }
 
 @media (max-width:420px) {
-
+    .header__logo a img {
+        width: 72%;
+    }
     .phone-number {
         font-size: 12px;
         line-height: 18px;

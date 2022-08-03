@@ -181,6 +181,9 @@ header {
 }
 
 @media(max-width: 865px) {
+    .header__logo a img {
+        width: 62%;
+    }
     .header__nav {
         position: fixed;
         top: 0;
@@ -389,6 +392,9 @@ header {
     .phone-number {
         font-size: 12px;
         line-height: 18px;
+    }
+    .header__logo a img {
+        width: 72%;
     }
 
 }
