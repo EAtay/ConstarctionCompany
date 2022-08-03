@@ -1,5 +1,5 @@
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -9,6 +9,7 @@
     z-index: 1001;
     overflow-y: scroll;
 }
+
 
 .modal__body {
     padding: 8vh 0 6vh;
@@ -24,13 +25,14 @@
     position: absolute;
     right: 0;
 }
+
 .modal__content {
     position: relative;
     height: auto;
     padding: 0 90px;
     border-radius: 4px;
-    background-color: #5AB0FF;
-    color: #7E7E7E;
+    background-color: #ffffff;
+    color: #000;
     display: flex;
     align-items: center;
     text-align: center;
@@ -38,13 +40,24 @@
 }
 
 .modal__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     max-width: 312px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     padding-top: 38px;
-    padding-bottom: 25px;
+}
+.modal__context{
+    margin-top: 10px
+}
+.modal__line {
+    margin: 10px 0;
+    height: 1px;
+    width: 100%;
+    background: #E1B168;
 }
 
 .modal__inputs {
@@ -70,7 +83,7 @@
     outline: 2px solid #5AB0FF;
 }
 
-.error-input{
+.error-input {
     background-color: #FFEEEE;
     outline: 1px solid #FF5437;
 }
@@ -92,6 +105,12 @@
     line-height: 24px;
 }
 
+.modal__faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .modal__btn-send {
     margin: 42px 0 33px 0;
@@ -134,14 +153,16 @@
     margin-bottom: 36px;
 }
 
-form {
+#form-modal {
     max-width: 330px;
     position: relative;
     margin: 12px auto 0;
     font-size: 15px;
 }
 
-
+.body__scroll-off {
+    overflow-x: none;
+}
 
 @media (max-width: 652px) {
     .modal__content {
@@ -172,6 +193,7 @@ form {
         left: 126px;
         z-index: 1002;
     }
+
     .close_modal:before,
     .close_modal:after {
         height: 22px;

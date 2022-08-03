@@ -1,7 +1,7 @@
 @import url(./components/header.css);
-@import url(./components/footer.css);
 @import url(./components/form.css);
 @import url(./components/modal.css);
+@import url(./components/footer.css);
 #main {
     align-items: center;
     display: flex;

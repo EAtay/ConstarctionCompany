@@ -1,5 +1,7 @@
 @import url(../../css/components/footer.css);
 @import url(../../css/components/form.css);
+@import url(../../css/components/modal.css);
+
 
 * {
     padding: 0;
@@ -73,9 +75,6 @@ header {
     width: 42%;
 }
 
-
-
-
 .header__contact-us {
     width: 21%;
     display: flex;
@@ -102,9 +101,19 @@ header {
 .container-bottom {
     border-top: 1px solid #5C6168;
     padding: 26px 40px;
+    z-index: 100;
     align-items: center;
     border-bottom: 1px solid #5C6168;
-
+}
+.header_fixed {
+    background: #4C4D4F;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    align-items: center;
 }
 
 

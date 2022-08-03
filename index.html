@@ -447,7 +447,7 @@
     </section>
     <section id="form">
         <div class="form__container">
-            <form action="submit" class="form">
+            <form id="form-container" action="submit" class="form">
                 <div class="form__line"></div>
                 <h1 class="form__title">Форма обратной связи</h1>
                 <div class="form__line"></div>
@@ -529,7 +529,7 @@
             <p class="confidantiality">Политика конфиденциальности</p>
         </div>
     </footer>
-    <div class="modal">
+    <div id="modal" class="modal">
         <div class="modal__body">
             <div class="modal__content">
                 <div class="close__content">
@@ -542,8 +542,9 @@
                 </div>
                 <form action="#" id="form-modal" novalidate>
                     <p class="modal__title">Форма обратной связи
+                        <div class="modal__line"></div>
                     </p>
-                    <p class="modal__context">Оставьте Заявку И Наш Менеджер Свяжется С Ваи В Удобное Для Вас Время.</p>
+                    <p class="modal__context">Оставьте Заявку И Наш Менеджер Свяжется С Вам В Удобное Для Вас Время.</p>
                     <div class="modal__inputs">
                         <input id="firstname" type="text" class="modal__input" name="firstname" placeholder="ФИО">
                         <div class="input-status"></div>
@@ -553,11 +554,11 @@
                         <div class="input-status"></div>
                     </div>
                     <div class="modal__inputs">
-                        <input type="text" class="modal__input" placeholder="Номер телефона">
+                        <input type="text" id="phoneNumber" class="modal__input" placeholder="Номер телефона">
                         <div class="input-status"></div>
                     </div>
                     <div class="modal__inputs">
-                        <input type="text" class="modal__input" placeholder="Комментарий">
+                        <input type="text" id="comment" class="modal__input" placeholder="Комментарий">
                         <div class="input-status"></div>
                     </div>
                     <div class="modal__faq">

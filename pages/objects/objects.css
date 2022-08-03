@@ -1,7 +1,6 @@
 @import url(../../css/components/footer.css);
 @import url(../../css/components/form.css);
-@import url(../../css/components/form.css);
-
+@import url(../../css/components/modal.css);
 
 * {
     padding: 0;
@@ -20,6 +19,7 @@ header {
     color: #fff;
     background: #4C4D4F;
 }
+
 
 .content {
     width: 100%;
@@ -103,8 +103,18 @@ header {
     border-top: 1px solid #5C6168;
     padding: 26px 40px;
     align-items: center;
+    z-index: 100;
     border-bottom: 1px solid #5C6168;
-
+}
+.header_fixed {
+    background: #4C4D4F;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    align-items: center;
 }
 
 

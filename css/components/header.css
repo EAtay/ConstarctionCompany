@@ -35,9 +35,11 @@ header {
     justify-content: center;
     border: 2px solid #E1B168;
 }
+
 .header__tel p {
     margin: 0;
 }
+
 .phone-number {
     font-weight: 400;
     font-size: 22px;
@@ -85,10 +87,20 @@ header {
 .container-bottom {
     border-top: 1px solid #5C6168;
     padding: 26px 40px;
+    z-index: 100;
     align-items: center;
-
 }
 
+.header_fixed {
+    background: #4C4D4F;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    align-items: center;
+}
 
 .nav-item {
     margin-right: 36px;
@@ -104,7 +116,8 @@ header {
     color: #fff;
     text-decoration: none;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     color: #E1B168;
     text-decoration: none;
 
@@ -146,7 +159,8 @@ header {
 .block {
     display: none;
 }
-._lock{
+
+._lock {
     overflow-y: hidden;
 }
 
@@ -396,6 +410,7 @@ header {
     .block {
         width: 40%;
     }
+
     .header__social-links {
         width: 22%;
     }

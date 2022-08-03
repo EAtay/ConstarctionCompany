@@ -6,12 +6,14 @@ export default function openModal() {
   const loadContent = document.querySelector(".load__content");
   let username = document.getElementById("firstname"),
     email = document.getElementById("email"),
+    userPhone = document.getElementById("phoneNumber"),
+    comment = document.getElementById("comment"),
     errorMsg = document.querySelectorAll(".input-status");
   const errorChecked = document.querySelector(".checked__error");
   const doneBtn = document.querySelector(".hidden__btn-done");
   const closeModal = document.querySelector(".close__content");
 
-  
+
   const openByBtn = () => {
     const form = document.getElementById("form-modal");
     Array.from(form.elements.checkbox__value).forEach(
@@ -21,9 +23,6 @@ export default function openModal() {
     modalOpen.style.display = "block";
     document.body.classList.add("body__scroll-off");
   };
-  buyBtn.addEventListener("click", function (e) {
-    openByBtn();
-  });
   function validateEmail(email) {
     let re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -58,9 +57,11 @@ export default function openModal() {
     e.preventDefault();
     validation(username, 0, "required field");
     validation(email, 1, "required field");
+    validation(userPhone, 2, "required field");
+    validation(comment, 3, "required field");
 
-    if (username.value && email.value && activeCheckboxesText()) {
-      errorChecked.style.display = "none";
+    if (username.value && email.value && userPhone.value && comment.value) {
+
       loadContent.classList.add("hidden__modal__content");
       setTimeout(() => {
         sendBtn.setAttribute("disabled", "");
@@ -68,9 +69,12 @@ export default function openModal() {
 
         username.value = "";
         email.value = "";
+        userPhone.value = "";
+        comment.value = "";
         username.classList.remove("error-input");
         email.classList.remove("error-input");
-        errorChecked.style.display = "none";
+        userPhone.classList.remove("error-input");
+        comment.classList.remove("error-input");
         modalOpen.style.display = "none";
         sendBtn.removeAttribute("disabled", "");
         document.body.classList.remove("body__scroll-off");
@@ -81,10 +85,8 @@ export default function openModal() {
       const data = {
         username: username.value,
         email: email.value,
-        plans: Array.from(form.elements.drone).find((x) => x.checked)?.value,
-        socials: Array.from(form.elements.checkbox__value)
-          .filter((x) => x.checked)
-          .map((x) => x.value),
+        userPhome: userPhone.value,
+        comment: comment.value,
       };
 
       console.log("DATA", data);
@@ -95,11 +97,13 @@ export default function openModal() {
   closeModal.addEventListener("click", function (e) {
     username.value = "";
     email.value = "";
+    userPhone.value = "";
+    comment.value = "";
     username.classList.remove("error-input");
     email.classList.remove("error-input");
-    errorChecked.style.display = "none";
+    userPhone.classList.remove("error-input");
+    comment.classList.remove("error-input");
     modalOpen.style.display = "none";
-    doneBtn.style.display = "none";
     sendBtn.removeAttribute("disabled", "");
 
     document.body.classList.remove("body__scroll-off");
@@ -111,12 +115,15 @@ export default function openModal() {
       if (e.path.indexOf(modalContent) === -1) {
         username.value = "";
         email.value = "";
-        errorChecked.style.display = "none";
+        userPhone.value = "";
+        comment.value = "";
         document.body.classList.remove("body__scroll-off");
         username.classList.remove("error-input");
         email.classList.remove("error-input");
+        userPhone.classList.remove("error-input");
+        comment.classList.remove("error-input");
         modalOpen.style.display = "none";
-        doneBtn.style.display = "none";
+
         sendBtn.removeAttribute("disabled", "");
       }
     },
