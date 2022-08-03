@@ -1,4 +1,6 @@
 import burger from "./js/burger.js";
-burger ();
+import openModal from "./js/modal.js";
+burger();
 import onEntry from "./js/news-animation.js";
-onEntry()
+onEntry();
+openModal();
