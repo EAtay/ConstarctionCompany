@@ -47,6 +47,7 @@ header {
 .header__tel p {
     margin: 0;
 }
+
 .phone-number {
     font-weight: 400;
     font-size: 22px;
@@ -66,7 +67,7 @@ header {
     width: 42%;
 }
 
-._lock{
+._lock {
     overflow-y: hidden;
 }
 
@@ -393,10 +394,12 @@ header {
         width: 20%;
     }
 }
+
 @media (max-width:350px) {
     .block {
         width: 40%;
     }
+
     .header__social-links {
         width: 22%;
     }
@@ -405,7 +408,7 @@ header {
 /* Main section */
 #main {
     background: #4C4D4F;
-    padding: 64px 0 0;
+    padding: 44px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,9 +418,6 @@ header {
     justify-content: space-between;
     padding: 0 40px;
     display: flex;
-    height: 100%;
-    min-height: 700px;
-    max-width: 1420px;
     width: 100%;
     max-width: 1420px;
     flex-wrap: wrap;
@@ -453,13 +453,39 @@ header {
 }
 
 .about__text {
-    margin-top: 48px;
+    margin-top: 38px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 30px;
-    text-align: justify;
-    text-transform: lowercase;
+    line-height: 28px;
     color: #FFFFFF;
+}
+
+.about__context {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about__context:last-of-type {
+    margin-top: 10px;
+}
+
+.content__container ul {
+    list-style: none;
+    margin: 10px 0 20px;
+}
+
+.content__container ul li:before {
+    color: #fff;
+    content: "—";
+    position: relative;
+    left: -5px;
+}
+.about-list{
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 @media (max-width:1140px) {
