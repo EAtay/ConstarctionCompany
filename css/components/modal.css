@@ -32,7 +32,6 @@
 }
 
 .modal__content {
-    overflow-y: auto;
     position: relative;
     height: auto;
     padding: 0 90px;
