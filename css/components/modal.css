@@ -17,16 +17,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.close__content{
+    position: absolute;
+    top: 27px;
+    right: 28px;
+    z-index: 100;
 }
 
 .close__modal {
     top: 0;
-    margin: 27px 29px;
-    position: absolute;
     right: 0;
 }
 
 .modal__content {
+    overflow-y: auto;
     position: relative;
     height: auto;
     padding: 0 90px;
@@ -50,9 +56,11 @@
     line-height: 30px;
     padding-top: 38px;
 }
-.modal__context{
+
+.modal__context {
     margin-top: 10px
 }
+
 .modal__line {
     margin: 10px 0;
     height: 1px;

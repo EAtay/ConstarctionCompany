@@ -1,5 +1,6 @@
 export default function openModal() {
   const modal = document.querySelectorAll(".header__contact-us");
+  const modalMainBtn = document.querySelectorAll(".main-btn");
   const modalOpen = document.querySelector(".modal");
 
   const sendBtn = document.querySelector(".modal__btn-send");
@@ -17,6 +18,12 @@ export default function openModal() {
     return re.test(String(email).toLowerCase());
   }
   modal.forEach((tag) => {
+    tag.addEventListener("click", function (e) {
+      modalOpen.style.display = "block";
+      document.body.classList.add("body__scroll-off");
+    });
+  });
+  modalMainBtn.forEach((tag) => {
     tag.addEventListener("click", function (e) {
       modalOpen.style.display = "block";
       document.body.classList.add("body__scroll-off");
@@ -40,6 +47,21 @@ export default function openModal() {
       id.classList.remove("error-input");
     }
   };
+  closeModal.addEventListener("click", function (e) {
+    e.preventDefault();
+    username.value = "";
+    email.value = "";
+    userPhone.value = "";
+    comment.value = "";
+    username.classList.remove("error-input");
+    email.classList.remove("error-input");
+    userPhone.classList.remove("error-input");
+    comment.classList.remove("error-input");
+    modalOpen.style.display = "none";
+    sendBtn.removeAttribute("disabled", "");
+
+    document.body.classList.remove("body__scroll-off");
+  });
 
   sendBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -81,20 +103,7 @@ export default function openModal() {
       console.log("false");
     }
   });
-  closeModal.addEventListener("click", function (e) {
-    username.value = "";
-    email.value = "";
-    userPhone.value = "";
-    comment.value = "";
-    username.classList.remove("error-input");
-    email.classList.remove("error-input");
-    userPhone.classList.remove("error-input");
-    comment.classList.remove("error-input");
-    modalOpen.style.display = "none";
-    sendBtn.removeAttribute("disabled", "");
 
-    document.body.classList.remove("body__scroll-off");
-  });
   document.querySelector(".modal__body").addEventListener(
     "click",
     (e) => {
