@@ -8,6 +8,7 @@
     left: 0;
     z-index: 1001;
     overflow-y: scroll;
+    overflow: auto;
 }
 
 
@@ -18,10 +19,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow-y: initial;
 }
 .close__content{
-    overflow-y: auto;
     position: absolute;
     top: 27px;
     right: 28px;
