@@ -106,7 +106,6 @@ header {
     padding: 26px 40px;
     align-items: center;
     z-index: 100;
-    border-bottom: 1px solid #5C6168;
 }
 
 .header_fixed {
@@ -454,12 +453,22 @@ header {
     width: 88%;
 }
 
+.slider__container {
+    height: 464px;
+    width: 88%;
+}
+
+#carousel-inner .item  img{
+    height: 100%;
+}
+
 .news-title {
     margin: 40px 0;
     font-size: 32px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
 }
+
 
 .content-container {
     display: flex;

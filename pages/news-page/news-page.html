@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./news-page.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -76,7 +79,34 @@
     <section id="main__section">
         <div class="main__container">
             <h1 class="news-title">НК-Строй разыгрывает квартиру!</h1>
-            <img class="news-img" src="../../assets/img/news-card-item2.jpg" alt="news-page-img">
+            <div class="slider__container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol id="carousel-indicators" class="carousel-indicators">
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="1"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="2"></li>
+                        <li id="index__item" data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div id="carousel-inner" class="carousel-inner">
+                        <div class="item active">
+                            <img src="../../assets/img/news-card-item2.jpg" alt="1st-item" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="2st-item" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="../../assets/img/news-card-item2.jpg" alt="3st-item" style="width:100%;">
+                        </div>
+                        <div class="item">
+                            <img src="../../assets/img/slider-bg.png" alt="4st-item" style="width:100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="content-container">
                 <h4 class="content-title">Собственное жилье - не это ли мечта? Несомненно, да! Самое время приобретать
                     недвижимость, ведь квадратные метры - это лучшая инвестиция!</h4>
@@ -195,7 +225,7 @@
                 </div>
                 <form action="#" id="form-modal" novalidate>
                     <p class="modal__title">Форма обратной связи
-                    <div class="modal__line"></div>
+                        <div class="modal__line"></div>
                     </p>
                     <p class="modal__context">Оставьте Заявку И Наш Менеджер Свяжется С Вам В Удобное Для Вас Время.</p>
                     <div class="modal__inputs">
